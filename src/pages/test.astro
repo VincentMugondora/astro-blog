@@ -1,0 +1,16 @@
+---
+const name = 'John'
+console.log(`Hello, ${name}! Welcome to Astro.`)
+
+const users = [
+    { id: 1, name: 'Alice' },
+    { id: 2, name: 'Bob' },
+    { id: 3, name: 'Charlie' },
+]
+---
+
+<ul>
+    {users.map(user =>(
+        <li>{user.name}</li>
+    ))}
+</ul>
