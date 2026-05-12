@@ -59,7 +59,7 @@ import "../styles/global.css";
           >
             <li>
               <a
-                href="index.html"
+                href="/"
                 class="block py-2 px-3 text-white rounded md:p-0 hover:text-indigo-400"
                 aria-current="page"
                 >Home</a
@@ -67,14 +67,14 @@ import "../styles/global.css";
             </li>
             <li>
               <a
-                href="articles.html"
+                href="/articles"
                 class="block py-2 px-3 text-white rounded md:p-0 hover:text-indigo-400"
                 >All Articles</a
               >
             </li>
             <li>
               <a
-                href="about.html"
+                href="/about"
                 class="block py-2 px-3 text-white rounded md:p-0 hover:text-indigo-400"
                 >About</a
               >
@@ -85,6 +85,8 @@ import "../styles/global.css";
     </nav>
 
     <section class="container mx-auto max-w-screen-xl mt-10 px-8">
+        <slot />
+    </section>
         <footer class="bg-indigo-900 text-white">
       <div class="container mx-auto mt-10 max-w-screen-xl px-8">
         <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
