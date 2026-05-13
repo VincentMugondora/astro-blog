@@ -1,9 +1,14 @@
 ---
 import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../constant"; 
 
 const {title = "Articles, Stories & Tutorials for Tech People"} = Astro.props; 
+
+interface Props {
+  title?: string;
+}
 ---
 
 <!DOCTYPE html>
@@ -26,5 +31,6 @@ const {title = "Articles, Stories & Tutorials for Tech People"} = Astro.props;
     <section class="container mx-auto max-w-screen-xl mt-10 px-8">
         <slot />
     </section>
+    <Footer />
   </body>
 </html>
